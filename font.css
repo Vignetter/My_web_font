@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'TsukuARdGothic';
+    src: url('./FOT-TsukuARdGothic\ Std\ D.ttf') format('tff');
+}
+body{
+  font-family: 'TsukuARdGothicF';
+}
