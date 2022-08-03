@@ -1,4 +1,4 @@
-import 'dynamicLoading';
+import './dynamicLoading';
 
 
 dynamicLoading('./font.css');

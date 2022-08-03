@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'TsukuARdGothic';
-    src: url('./FOT-TsukuARdGothic\ Std\ D.ttf') format('tff');
+    src: url('https://cdn.jsdelivr.net/gh/Vignetter/My_web_font@main/FOT-TsukuARdGothic%20Std%20D.ttf') format('ttf');
 }
 body{
-  font-family: 'TsukuARdGothicF';
+  font-family: 'TsukuARdGothic';
 }
