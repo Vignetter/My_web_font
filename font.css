@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TsukuARdGothic';
-    src: url('https://cdn.jsdelivr.net/gh/Vignetter/My_web_font@main/FOT-TsukuARdGothic%20Std%20D.ttf') format('ttf');
+    src: url('https://cdn.jsdelivr.net/gh/Vignetter/My_web_font@main/FOT-TsukuARdGothic%20Std%20D.ttf') format('truetype');
 }
 body{
   font-family: 'TsukuARdGothic';
