@@ -10,41 +10,14 @@
 // @license     MIT
 // @run-at      document-start
 // ==/UserScript==
- 
-class Replacer {
-    constructor() {
-      this.css = []
-    }
-    add(fonts) {
-        for (const font of fonts) {
-            let extra = ''
-            // if (font.weight) {
-            //   extra += `font-weight:${font.weight};`
-            // }
-            this.css.push(`@font-face{font-family:"${font.name}";${extra}src:url("${font.link}") format('${font.type}')}`);
-            this.css.push(`body{
-                font-family: '${font.name}';
-              }`);
-        }
-    }
-    toString() {
-      return this.css.join('\n')
-    }
-  }
-   
-  let replacer = new Replacer()
-   
-  /**** Replace rules START *****/
-   
-  const fonts = [
-    {
-        name: 'TsukuARdGothic',
-        link: 'https://cdn.jsdelivr.net/gh/Vignetter/My_web_font@main/FOT-TsukuARdGothic%20Std%20D.ttf',
-        type: 'ttf'
-    },
-  ]
-  
-  /**** Replace rules END *****/
-   
-  replacer.add(fonts)
-  GM_addStyle(replacer.toString())
+
+var my_font = new FontFace('TsukuARdGothic', "url('https://cdn.jsdelivr.net/gh/Vignetter/My_web_font@main/font.css') format('truetype')", { style: 'normal', weight: 'normal' });
+
+my_font.load().then(function(loaded_face) {
+	document.fonts.add(loaded_face);
+  console.log('font loaded!')
+    // document.body.style.fontFamily = '"TsukuARdGothic", "微軟雅黑"';
+}).catch(function(error) {
+	// error occurred
+    console.log('Something wrong!')
+});

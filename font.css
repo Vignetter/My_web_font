@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'TsukuARdGothic';
-    src: url('./FOT-TsukuARdGothic%20Std%20D.ttf') format('truetype');
-}
-body{
-  font-family: 'TsukuARdGothic';
+body {
+  font-family: "TsukuARdGothic", "微軟雅黑"!important;
 }
